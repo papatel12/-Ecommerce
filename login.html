@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Click & Go - Login</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Parth Patel - Team 3" />
+	<meta name="description" content="An easy-to-use e-commerce website for BU students" />
+	<!-- Links css to the HTML -->
+	<link rel="stylesheet" href="login.css" type="text/css" />
+	<script>
+		function check(form)
+		{
+			if(form.user.value == "team" && form.password.value == "project")
+			{
+				window.open("homepage.html")
+			}
+			else
+			{
+				alert("Error Password or Username")
+			}
+		}
+	</script>
+	</head>
+	<body>
+			
+		<form name="login">
+			<div class="imgcontainer">
+				<img src="Logo_File.png" alt="go" class="go">
+			</div>
+				
+			<div class="container">
+				<label for="uname"><b>Username:</b></label>
+				<input type="text"  name="user" placeholder="Enter Username" name="uname" required>
+			    </br>
+				<label for="psw"><b>Password:</b></label>
+				<input type="password" name="password" placeholder="Enter Password" name="psw" required>
+			    </br>
+				<button type="submit" onClick="check(this.form);" value="Login" name="Enter">Login</button>
+			</div>
+				
+			<div class="container" style="background-color: rgb(98, 179, 255);">
+				<button type="button" class="registerbtn">Register</button>
+				<span class="psw" style="font-size: 15px;">Forgot <a href="#">password?</a></span>
+			</div>
+		</form>
+			
+
+		<div id="footer">
+			<p>
+				Team 3 <br>
+				Boston Unviversity CS-633
+			</p>
+		</div>
+</body>
+</html>
